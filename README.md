@@ -1,39 +1,35 @@
-# 🛡️ Live Cyber Threat Map by IndoBSD
+# 🛡️ Live Cyber Threat Map & ShieldScan by IndoBSD
 [![Status](https://img.shields.io/badge/Status-Live_Monitoring-success?style=for-the-badge)](https://devhunter-git.github.io/live-cyber-threat-map-indobsd/)
-[![Source](https://img.shields.io/badge/Source-IndoBSD-blue?style=for-the-badge)](https://ctmap.indobsd.id/)
-[![Provider](https://img.shields.io/badge/Infrastructure-Dev'Hunter_Security-orange?style=for-the-badge)](https://github.com/devhunter-git)
+[![Tools](https://img.shields.io/badge/Tools-Threat_Map_%7C_ShieldScan-blue?style=for-the-badge)](https://github.com/devhunter-git)
 
-> **Real-time visual projection of cyber threat intelligence within the Indonesian internet landscape.**
-> This repository provides a streamlined, full-screen dashboard interface designed for Security Operation Centers (SOC) and personal monitoring stations.
-
----
-
-## 🚀 Interactive Dashboard
-Experience the live threat telemetry in full-screen mode:
-👉 **[Launch Live Map Dashboard](https://devhunter-git.github.io/live-cyber-threat-map-indobsd/)**
+> **Integrated Security Monitoring Dashboard: Real-time Threat Telemetry and Network Security Auditing Tools.**
+> Managed by **Dev'Hunter Security** for enhanced situational awareness within the Indonesian digital landscape.
 
 ---
 
-## 🛠️ Features & Purpose
-This dashboard is engineered for high-visibility monitoring, focusing on:
-* **Cyber Situational Awareness:** Real-time tracking of regional digital attacks.
-* **NOC/SOC Ready:** Clean UI optimized for 24/7 display on large monitoring screens.
-* **Zero Latency Wrapper:** Direct integration with IndoBSD's live telemetry for up-to-the-second accuracy.
+## 🚀 Launch Dashboard
+Access the integrated security tools here:
+👉 **[Launch Live Security Dashboard](https://devhunter-git.github.io/live-cyber-threat-map-indobsd/)**
 
 ---
 
-## 📊 Threat Intelligence Scope
-The visualization covers various malicious activities detected across Indonesian IP ranges, including:
-* **Botnet Propagation:** Active Command & Control (C2) communication.
-* **Brute Force & Exploits:** Real-time probing of network vulnerabilities.
-* **Regional Hotspots:** Geographical mapping of attack origins and targets.
+## 🛠️ Included Tools
+This repository provides a unified interface for two critical security services:
+
+1.  **Live Cyber Threat Map:** Real-time visual projection of cyberattacks, botnet activities, and C2 communication across Indonesia.
+2.  **ShieldScan:** A professional-grade security audit tool to scan and verify network vulnerabilities and IP reputation.
+
+---
+
+## 📋 Technical Implementation
+* **Infrastructure:** GitHub Pages (Static Hosting).
+* **Upstream:** IndoBSD (ctmap & shieldscan).
+* **Display Mode:** Optimized for NOC/SOC full-screen monitoring with a quick-switch navigation interface.
 
 ---
 
 ## 🛡️ Disclaimer
-*All visualized data is provided by **IndoBSD**. This repository acts as a dedicated monitoring interface. Data accuracy and telemetry updates are managed by the upstream provider.*
+*All tools and data telemetry are provided by **IndoBSD**. This dashboard acts as a professional wrapper for monitoring purposes. Dev'Hunter Security does not store any scan data from ShieldScan.*
 
 ---
-**Managed by:**
-**DEV'HUNTER SECURITY** | *Sysadmin by Passion, Security by Necessity.*
-`Monitoring the Indonesian digital horizon.`
+**DEV'HUNTER SECURITY** | *Ensuring a safer digital horizon.*
