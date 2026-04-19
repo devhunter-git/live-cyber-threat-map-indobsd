@@ -5,39 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security Dashboard - Dev'Hunter Security</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #000; font-family: sans-serif; }
-        iframe { position: absolute; top: 40px; left: 0; width: 100%; height: calc(100% - 40px); border: none; }
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #000; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         
+        /* Bar Navigasi Atas */
         .nav-bar {
-            height: 40px;
-            background: #1a1a1a;
+            height: 45px;
+            background: #111;
             display: flex;
             align-items: center;
-            padding: 0 10px;
+            padding: 0 15px;
             border-bottom: 2px solid #00ff00;
+            box-shadow: 0 2px 10px rgba(0,255,0,0.2);
         }
 
         .nav-btn {
-            background: #333;
+            background: #222;
             color: #00ff00;
-            border: 1px solid #00ff00;
-            padding: 5px 15px;
-            margin-right: 10px;
+            border: 1px solid #444;
+            padding: 6px 18px;
+            margin-right: 12px;
             cursor: pointer;
-            font-size: 12px;
-            text-transform: uppercase;
+            font-size: 13px;
             font-weight: bold;
+            transition: 0.3s;
+            border-radius: 3px;
         }
 
-        .nav-btn:hover { background: #00ff00; color: #000; }
-        .active { background: #00ff00; color: #000; }
+        .nav-btn:hover { background: #00ff00; color: #000; border-color: #00ff00; }
+        .active { background: #00ff00; color: #000; border-color: #00ff00; }
+
+        /* Frame Area */
+        iframe { 
+            position: absolute; 
+            top: 47px; 
+            left: 0; 
+            width: 100%; 
+            height: calc(100% - 47px); 
+            border: none; 
+        }
     </style>
 </head>
 <body>
 
 <div class="nav-bar">
-    <button class="nav-btn active" onclick="showPage('https://ctmap.indobsd.id/', this)">Live Threat Map</button>
-    <button class="nav-btn" onclick="showPage('https://shieldscan.indobsd.id/', this)">ShieldScan (Security Audit)</button>
+    <button class="nav-btn active" onclick="showPage('https://ctmap.indobsd.id/', this)">🛡️ Live Threat Map</button>
+    <button class="nav-btn" onclick="showPage('https://shieldscan.indobsd.id/', this)">🔍 ShieldScan (Audit)</button>
 </div>
 
 <iframe id="main-frame" src="https://ctmap.indobsd.id/"></iframe>
@@ -46,7 +58,9 @@
     function showPage(url, btn) {
         document.getElementById('main-frame').src = url;
         let btns = document.getElementsByClassName('nav-btn');
-        for (let i = 0; i < btns.length; i++) { btns[i].classList.remove('active'); }
+        for (let i = 0; i < btns.length; i++) { 
+            btns[i].classList.remove('active'); 
+        }
         btn.classList.add('active');
     }
 </script>
