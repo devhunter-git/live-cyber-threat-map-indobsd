@@ -3,60 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Portal - Dev'Hunter Security</title>
+    <title>Dev'Hunter Security - Monitoring Portal</title>
     <style>
         body {
             margin: 0;
-            background-color: #0a0a0a;
+            background-color: #050505;
             color: #00ff00;
             font-family: 'Courier New', Courier, monospace;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
+        }
+        .portal {
+            border: 2px solid #00ff00;
+            padding: 50px;
+            background: rgba(0, 255, 0, 0.02);
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.1);
             text-align: center;
+            max-width: 600px;
         }
-        .container {
-            border: 1px solid #00ff00;
-            padding: 40px;
-            background: rgba(0, 255, 0, 0.05);
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
-        }
-        h1 { font-size: 24px; margin-bottom: 30px; border-bottom: 1px solid #00ff00; padding-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .card {
+        h1 { font-size: 22px; letter-spacing: 3px; margin-bottom: 40px; }
+        .links { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .btn {
             border: 1px solid #00ff00;
             padding: 20px;
             text-decoration: none;
             color: #00ff00;
-            transition: 0.3s;
-            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: block;
         }
-        .card:hover {
+        .btn:hover {
             background: #00ff00;
             color: #000;
+            box-shadow: 0 0 15px #00ff00;
         }
-        .card h2 { margin-top: 0; font-size: 18px; }
-        .card p { font-size: 12px; }
-        .footer { margin-top: 30px; font-size: 10px; opacity: 0.6; }
+        .status { margin-top: 40px; font-size: 11px; opacity: 0.5; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>DEV'HUNTER SECURITY PORTAL</h1>
-    <div class="grid">
-        <a href="https://ctmap.indobsd.id/" target="_blank" class="card">
-            <h2>🛡️ THREAT MAP</h2>
-            <p>Live Cyber Threat Intelligence Monitoring</p>
+<div class="portal">
+    <h1>DEV'HUNTER SECURITY MONITORING</h1>
+    <div class="links">
+        <a href="https://ctmap.indobsd.id/" target="_blank" class="btn">
+            🛡️ LIVE THREAT MAP<br>
+            <span style="font-size: 9px; font-weight: normal;">Cyber Intelligence</span>
         </a>
-        <a href="https://shieldscan.indobsd.id/" target="_blank" class="card">
-            <h2>🔍 SHIELD SCAN</h2>
-            <p>Network Security Audit & IP Reputation</p>
+        <a href="https://shieldscan.indobsd.id/" target="_blank" class="btn">
+            🔍 SHIELD SCAN<br>
+            <span style="font-size: 9px; font-weight: normal;">Security Audit</span>
         </a>
     </div>
-    <div class="footer">SYSTEM STATUS: OPERATIONAL | BY DEV'HUNTER SECURITY</div>
+    <div class="status">GATEWAY: OPERATIONAL | ENCRYPTION: ACTIVE</div>
 </div>
 
 </body>
