@@ -7,9 +7,8 @@
 
 ---
 
-## 🚀 Launch Dashboard
-Access the integrated security tools here:
-👉 **[Launch Live Security Dashboard](https://devhunter-git.github.io/live-cyber-threat-map-indobsd/)**
+## 🚀 Live Security Portal
+👉 **[Open Dev'Hunter Security Dashboard](https://devhunter-git.github.io/live-cyber-threat-map-indobsd/)**
 
 ---
 
